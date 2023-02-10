@@ -20,9 +20,8 @@ public class Skieur {
     public List<Inscription> inscription;
 
     @ManyToMany
-    Set<Piste> pisteSet;
+    public List<Piste> piste;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "abonnement", referencedColumnName = "numAbon")
+    @OneToOne(cascade = CascadeType.REMOVE)
     public Abonnement abonnement;
 }

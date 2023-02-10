@@ -3,6 +3,7 @@ package tn.esprit.ds.ski_oussama_jalleli.Entities;
 
 
 import javax.persistence.*;
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -16,6 +17,6 @@ public class Piste {
     private int pente;
     private int longueur;
 
-    @ManyToMany
-    Set<Skieur> SkieurSet;
+    @ManyToMany(mappedBy = "piste" )
+    public List<Skieur> Skieur;
 }

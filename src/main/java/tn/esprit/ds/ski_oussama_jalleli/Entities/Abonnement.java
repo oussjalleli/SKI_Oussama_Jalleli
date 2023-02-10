@@ -2,7 +2,7 @@ package tn.esprit.ds.ski_oussama_jalleli.Entities;
 
 import javax.persistence.*;
 import java.time.LocalDate;
-
+@Entity
 public class Abonnement {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
