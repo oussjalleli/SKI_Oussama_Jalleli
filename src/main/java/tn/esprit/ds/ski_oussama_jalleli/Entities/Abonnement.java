@@ -13,6 +13,5 @@ public class Abonnement {
     @Enumerated(EnumType.STRING)
     private TypeAbonnement typeAbon;
 
-    @OneToOne(mappedBy = "abonnement")
-    public Skieur skieur;
+
 }
